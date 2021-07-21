@@ -8,22 +8,36 @@ const Navbar = () => {
     const navRef = useRef()
     const hamburgerRef = useRef()
     const [showMenu, setshowMenu] = useState(false)
+    const getDim = () =>{
+        const { innerWidth: width, innerHeight: height } = window;
+        return { innerWidth: width, innerHeight: height }
+    }
+  
+    const [dim, setdim] = useState(getDim())
     
     useEffect(() => {
+        window.addEventListener('resize',()=>{
+            setdim(getDim())
+        })
+
+
         hamburgerRef.current.addEventListener('click',()=>{
             console.log("click");
             if (!showMenu) {
                 setshowMenu(true)
-                navRef.current.style.animation = "drawer 2s forwards";
+                clearTimeout()
                 navRef.current.style.display = "grid";
+                navRef.current.style.animation = "drawer 2s  forwards";
+                
               
                 
               } else  {
-                setshowMenu(false)
-                navRef.current.style.animation = "drawerClose 2s forwards"
+               
+                navRef.current.style.animation = "drawerClose 2s  forwards "
                
                 setTimeout(() => {
                     navRef.current.style.display = "none";
+                    setshowMenu(false)
                 }, 1800);
               }
         }
@@ -46,8 +60,8 @@ const Navbar = () => {
                 </div>
                 <ul ref={navRef} className="nav-container">
                     <li className="nav-item">
-                        <Link to="/" className="nav-link link-1 ">
-                            Home
+                        <Link to="/" className={dim.innerWidth<768?"nav-link link-1":"nav-link link-1 rohit-text"}>
+                           {dim.innerWidth<768?"Home":"Rohit"}
                         </Link>
 
                     </li>

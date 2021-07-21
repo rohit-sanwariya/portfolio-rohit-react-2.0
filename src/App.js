@@ -5,12 +5,16 @@ import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import About from './Components/About';
 import './App.scss'
+import Navbar from './Components/Navbar';
 
 function App() {
   return <BrowserRouter>
    <div className="container">
      
-     
+   <div className="logo">
+                <a href="/" className="logo-text"> Rohit</a>
+            </div>
+            <Navbar/>
 
      <Switch>
        <Route exact path="/" > 

@@ -2,7 +2,6 @@ import React from 'react'
 import oneProject from '../img/project-one.png'
 import twoProject from '../img/project-two.png'
 import threeProject from '../img/project-three.png'
-import Navbar from './Navbar'
 
 const Projects = () => {
 
@@ -11,8 +10,8 @@ const Projects = () => {
 
 
     return (<>
-        <Navbar />
-
+    
+            <h1 style={{textJustify:"center",textAlign:"center",margin:"0.5rem"}}>My Projects</h1>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active project-card">
@@ -24,7 +23,7 @@ const Projects = () => {
                 </div>
                 <div class="carousel-item project-card">
                     <p><span>Box Office App:</span>  <br />
-                        Uses Tv</p>
+                        Search Tv Shows and Movies</p>
                     <img class="d-block w-100" src={twoProject} alt="Second slide" />
                 </div>
                 <div class="carousel-item project-card">

@@ -1,14 +1,38 @@
-import React from 'react'
+
 import '../App.scss'
-import Navbar from './Navbar'
+import workImage from '../img/work-illustrations.png'
 
 const Home = () => {
+   
+
+
     return (
         <div>
-            <div className="logo">
-                <a href="/" className="logo-text"> Rohit</a>
+           
+            <main class="hero">
+           <div class="column-1">
+            <div class="headline-container">
+                <h1 class="headline">
+                    Looking for a Web Developer ?
+                </h1>
             </div>
-            <Navbar/>
+            <div class="subtext-container">
+                <p class="subtext">
+                    Hello, I am a Web Developer and Programmer living in Indore.
+                    I Design Frontend Solutions, Usually with React.
+
+                </p>
+            </div>
+            <div class="send-email-container">
+                <a class="send-email" href="emailto:rohitsanwariya1995@gmail.com">
+                    Send Me An Email
+                </a>
+            </div>
+           </div>
+            <div class="card">
+                <img src={workImage} alt="" class="work-ilustration" />
+            </div>
+        </main>
         </div>
     )
 }
