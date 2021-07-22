@@ -81,6 +81,19 @@ nav {
 }
 
 main {
+
+
+    .skills-card{
+        width: 28rem;
+        height: 24rem;
+        margin: 1rem;
+        img{
+            width: 18rem;
+            height: 18rem;
+          
+
+        }
+    }
     display: grid;
     grid-template-columns: 7fr 5fr;
     height: 55vh;
