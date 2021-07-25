@@ -80,13 +80,21 @@ nav {
     }
 }
 
-main {
+main  {
 
+    .skills-container{
+        margin: 1rem;
+        padding: 1rem;
+        display: subgrid;
+        grid-template-columns: 1fr 1fr;
 
+    }
     .skills-card{
+        margin-top: 1rem;
         width: 28rem;
         height: 24rem;
         margin: 1rem;
+        text-align: center;
         img{
             width: 18rem;
             height: 18rem;
@@ -94,6 +102,9 @@ main {
 
         }
     }
+
+
+    
     display: grid;
     grid-template-columns: 7fr 5fr;
     height: 55vh;
@@ -177,6 +188,33 @@ main {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     body {
+
+
+
+.skills-container{
+    display: grid;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+
+    .skills-card{
+        width: 28rem;
+        height: 24rem;
+        margin: 1rem;
+        img{
+            width: 18rem;
+            height: 18rem;
+          
+
+        }
+    }
+
+}
+
+
         .carousel {
             height: 50%;
             margin-bottom: 3rem;
@@ -305,11 +343,11 @@ main {
 
 @keyframes drawer {
     0% {
-        top: 7rem;
+       
         left: -29rem;
     }
     100% {
-        top: 7rem;
+        
         left: -1rem;
         margin: 0;
         padding: 0;

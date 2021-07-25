@@ -1,4 +1,6 @@
+
 import React from 'react'
+import { useCallback } from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useRef } from 'react'
@@ -8,27 +10,28 @@ const Navbar = () => {
     const navRef = useRef()
     const hamburgerRef = useRef()
     const [showMenu, setshowMenu] = useState(false)
-    const getDim = () =>{
-        const { innerWidth: width, innerHeight: height } = window;
-        return { innerWidth: width, innerHeight: height }
-    }
+    let renderCount = 0;
+
+    const getDim = useCallback(() =>{
+        return window.innerWidth;
+    },[])
   
     const [dim, setdim] = useState(getDim())
     
     useEffect(() => {
+        renderCount++;
         window.addEventListener('resize',()=>{
             setdim(getDim())
         })
 
 
         hamburgerRef.current.addEventListener('click',()=>{
-            console.log("click");
             if (!showMenu) {
                 setshowMenu(true)
                 clearTimeout()
                 navRef.current.style.display = "grid";
                 navRef.current.style.animation = "drawer 2s  forwards";
-                
+               
               
                 
               } else  {
@@ -39,12 +42,13 @@ const Navbar = () => {
                     navRef.current.style.display = "none";
                     setshowMenu(false)
                 }, 1800);
+                
               }
         }
         )
         
        
-      }, [showMenu]);
+      }, [getDim,showMenu,renderCount]);
 
 
 
@@ -53,6 +57,7 @@ const Navbar = () => {
     return (
         <div>
             <nav>
+               
                 <div ref={hamburgerRef} className="hamburger">
                     <div className="line line-1"></div>
                     <div className="line line-2"></div>
@@ -60,8 +65,8 @@ const Navbar = () => {
                 </div>
                 <ul ref={navRef} className="nav-container">
                     <li className="nav-item">
-                        <Link to="/" className={dim.innerWidth<768?"nav-link link-1":"nav-link link-1 rohit-text"}>
-                           {dim.innerWidth<768?"Home":"Rohit"}
+                        <Link to="/" className={dim<768?"nav-link link-1":"nav-link link-1 rohit-text"}>
+                           {dim<768?"Home":"Rohit"}
                         </Link>
 
                     </li>

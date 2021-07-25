@@ -6,7 +6,7 @@ import reduxImg from '../img/redux.png'
 
 const Skills = () => {
     return (
-        <main className="slills-container">
+        <main className="skills-container">
             <div className="skills-card">
                 <p>
                     <span>Javascript</span>
