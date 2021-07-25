@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/portfolio-rohit-react-2.0/static/css/main.c722a5f5.chunk.css",
-    "main.js": "/portfolio-rohit-react-2.0/static/js/main.24666717.chunk.js",
-    "main.js.map": "/portfolio-rohit-react-2.0/static/js/main.24666717.chunk.js.map",
-    "runtime-main.js": "/portfolio-rohit-react-2.0/static/js/runtime-main.3a51fc49.js",
-    "runtime-main.js.map": "/portfolio-rohit-react-2.0/static/js/runtime-main.3a51fc49.js.map",
-    "static/js/2.cc4894ce.chunk.js": "/portfolio-rohit-react-2.0/static/js/2.cc4894ce.chunk.js",
-    "static/js/2.cc4894ce.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/2.cc4894ce.chunk.js.map",
+    "main.js": "/portfolio-rohit-react-2.0/static/js/main.1e100c07.chunk.js",
+    "main.js.map": "/portfolio-rohit-react-2.0/static/js/main.1e100c07.chunk.js.map",
+    "runtime-main.js": "/portfolio-rohit-react-2.0/static/js/runtime-main.066dfe84.js",
+    "runtime-main.js.map": "/portfolio-rohit-react-2.0/static/js/runtime-main.066dfe84.js.map",
+    "static/js/2.f1c381ac.chunk.js": "/portfolio-rohit-react-2.0/static/js/2.f1c381ac.chunk.js",
+    "static/js/2.f1c381ac.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/2.f1c381ac.chunk.js.map",
     "static/js/3.21fda2d5.chunk.js": "/portfolio-rohit-react-2.0/static/js/3.21fda2d5.chunk.js",
     "static/js/3.21fda2d5.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/3.21fda2d5.chunk.js.map",
     "static/js/4.58929b77.chunk.js": "/portfolio-rohit-react-2.0/static/js/4.58929b77.chunk.js",
     "static/js/4.58929b77.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/4.58929b77.chunk.js.map",
     "static/js/5.13089d37.chunk.js": "/portfolio-rohit-react-2.0/static/js/5.13089d37.chunk.js",
     "static/js/5.13089d37.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/5.13089d37.chunk.js.map",
-    "static/js/6.a8ffeb64.chunk.js": "/portfolio-rohit-react-2.0/static/js/6.a8ffeb64.chunk.js",
-    "static/js/6.a8ffeb64.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/6.a8ffeb64.chunk.js.map",
+    "static/js/6.c829c984.chunk.js": "/portfolio-rohit-react-2.0/static/js/6.c829c984.chunk.js",
+    "static/js/6.c829c984.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/6.c829c984.chunk.js.map",
     "static/js/7.cd5416c5.chunk.js": "/portfolio-rohit-react-2.0/static/js/7.cd5416c5.chunk.js",
     "static/js/7.cd5416c5.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/7.cd5416c5.chunk.js.map",
-    "static/js/8.46409636.chunk.js": "/portfolio-rohit-react-2.0/static/js/8.46409636.chunk.js",
-    "static/js/8.46409636.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/8.46409636.chunk.js.map",
+    "static/js/8.ab8d2c4a.chunk.js": "/portfolio-rohit-react-2.0/static/js/8.ab8d2c4a.chunk.js",
+    "static/js/8.ab8d2c4a.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/8.ab8d2c4a.chunk.js.map",
     "static/js/9.85ec53e7.chunk.js": "/portfolio-rohit-react-2.0/static/js/9.85ec53e7.chunk.js",
     "static/js/9.85ec53e7.chunk.js.map": "/portfolio-rohit-react-2.0/static/js/9.85ec53e7.chunk.js.map",
     "static/js/10.c0f4c47f.chunk.js": "/portfolio-rohit-react-2.0/static/js/10.c0f4c47f.chunk.js",
@@ -27,7 +27,7 @@
     "service-worker.js": "/portfolio-rohit-react-2.0/service-worker.js",
     "service-worker.js.map": "/portfolio-rohit-react-2.0/service-worker.js.map",
     "static/css/main.c722a5f5.chunk.css.map": "/portfolio-rohit-react-2.0/static/css/main.c722a5f5.chunk.css.map",
-    "static/js/2.cc4894ce.chunk.js.LICENSE.txt": "/portfolio-rohit-react-2.0/static/js/2.cc4894ce.chunk.js.LICENSE.txt",
+    "static/js/2.f1c381ac.chunk.js.LICENSE.txt": "/portfolio-rohit-react-2.0/static/js/2.f1c381ac.chunk.js.LICENSE.txt",
     "static/js/3.21fda2d5.chunk.js.LICENSE.txt": "/portfolio-rohit-react-2.0/static/js/3.21fda2d5.chunk.js.LICENSE.txt",
     "static/media/javascript.a035f0a7.png": "/portfolio-rohit-react-2.0/static/media/javascript.a035f0a7.png",
     "static/media/project-one.dda62a14.png": "/portfolio-rohit-react-2.0/static/media/project-one.dda62a14.png",
@@ -38,9 +38,9 @@
     "static/media/work-illustrations.254a0f50.png": "/portfolio-rohit-react-2.0/static/media/work-illustrations.254a0f50.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3a51fc49.js",
-    "static/js/2.cc4894ce.chunk.js",
+    "static/js/runtime-main.066dfe84.js",
+    "static/js/2.f1c381ac.chunk.js",
     "static/css/main.c722a5f5.chunk.css",
-    "static/js/main.24666717.chunk.js"
+    "static/js/main.1e100c07.chunk.js"
   ]
 }
