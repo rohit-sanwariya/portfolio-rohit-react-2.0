@@ -41,6 +41,9 @@ const Projects = () => {
                 <span  className="sr-only span-right">Next</span>
             </a>
         </div>
+        <div style={{margin:"1rem"}}>
+                    <p className="copyright">&copy; Rohit Sanwariya</p>
+                </div>
     </>
     )
 }

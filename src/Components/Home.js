@@ -1,39 +1,32 @@
 
+import { lazy, Suspense } from 'react'
 import '../App.scss'
-import workImage from '../img/work-illustrations.png'
+const HeroImg = lazy(() => import('./HeroImg'))
+const HeroText = lazy(() => import('./HeroText'))
+
 
 const Home = () => {
-   
+
+    const renderLoader = () => <div className="spinner-grow" role="status">
+        <span className="sr-only">Loading...</span>
+    </div>
 
 
     return (
-        <div>
-           
-            <main class="hero">
-           <div class="column-1">
-            <div class="headline-container">
-                <h1 class="headline">
-                    Looking for a Web Developer ?
-                </h1>
-            </div>
-            <div class="subtext-container">
-                <p class="subtext">
-                    Hello, I am a Web Developer and Programmer living in Indore.
-                    I Design Frontend Solutions, Usually with React.
+        <Suspense fallback={renderLoader()}>
+            <div>
 
-                </p>
+                <main className="hero">
+                    <HeroText />
+                    <HeroImg />
+
+                </main>
+                <div style={{margin:"1rem"}}>
+                    <p className="copyright">&copy; Rohit Sanwariya</p>
+                </div>
             </div>
-            <div class="send-email-container">
-                <a class="send-email" href="/projects">
-                   Check My Work
-                </a>
-            </div>
-           </div>
-            <div class="card">
-                <img src={workImage} alt="" class="work-ilustration" />
-            </div>
-        </main>
-        </div>
+
+        </Suspense>
     )
 }
 

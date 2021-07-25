@@ -1,48 +1,38 @@
 
-import React from 'react'
+import React, { memo } from 'react'
 import { useCallback } from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import rohitImg from '../img/Rohit.png'
 
 const Navbar = () => {
-    
-    const imgElement =()=><img src={rohitImg} alt="" />
-    const getDim = useCallback(() =>{
+
+    const getDim = useCallback(() => {
         return window.innerWidth;
-    },[])
-  
+    }, [])
+
     const [dim, setdim] = useState(getDim())
-    
+
     useEffect(() => {
-        window.addEventListener('resize',()=>{
+        window.addEventListener('resize', () => {
             setdim(getDim())
         })
-
-
-        
-       
-      }, [getDim]);
-
-
-
-
+    }, [getDim]);
 
     return (
         <div>
             <nav>
-               <input type="checkbox" name="s" id="s" />
-               <label htmlFor="s"></label>
-                <div  className="hamburger">
+                <input type="checkbox" name="s" id="s" />
+                <label htmlFor="s"></label>
+                <div className="hamburger">
                     <div className="line line-1"></div>
                     <div className="line line-2"></div>
                     <div className="line line-3"></div>
                 </div>
-                <ul  className="nav-container">
+                <ul className="nav-container">
                     <li className="nav-item">
-                        <Link to="/" className={dim<768?"nav-link link-1":"nav-link link-1 rohit-text"}>
-                           {dim<768?"Home":"Rohit"}
+                        <Link to="/" className={dim < 1024 ? "nav-link link-1" : "nav-link link-1 rohit-text"}>
+                            {dim < 1024 ? "Home" : "Rohit"}
                         </Link>
 
                     </li>
@@ -67,4 +57,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default memo(Navbar)

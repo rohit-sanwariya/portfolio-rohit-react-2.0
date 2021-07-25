@@ -6,7 +6,9 @@ import reduxImg from '../img/redux.png'
 
 const Skills = () => {
     return (
-        <main className="skills-container">
+        <main className="skills-container" style={{
+
+        }}>
             <div className="skills-card">
                 <p>
                     <span>Javascript</span>
@@ -31,6 +33,10 @@ const Skills = () => {
                 </p>
                 <img src={reduxImg} alt="" />
             </div>
+
+<p style={{marginLeft:"auto",textAlign:"center",paddingBottom:"1rem"}} >&copy; Rohit Sanwariya</p>
+
+
 
         </main>
     )

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Route, Switch,HashRouter, Link} from 'react-router-dom'
 import { lazy, Suspense } from 'react';
 
 import './App.css'
@@ -15,14 +15,16 @@ function App() {
 
 
 
-       const renderLoader = () => <p>Loading</p>;
+       const renderLoader = () => <div className="spinner-grow" role="status">
+       <span className="sr-only">Loading...</span>
+     </div>
 
-       return <Suspense fallback={renderLoader()}>
-              <BrowserRouter>
+       return <HashRouter>
+                     <Suspense fallback={renderLoader()}>
                      <div className="container">
 
                             <div className="logo">
-                                   <a href="/" className="logo-text"> Rohit</a>
+                                   <Link to="/" className="logo-text"> Rohit</Link>
                             </div>
                             <Navbar />
 
@@ -40,11 +42,12 @@ function App() {
                                           <About />
                                    </Route>
                             </Switch>
+                           
 
                      </div>
-
-              </BrowserRouter>
-       </Suspense>
+                     </Suspense>
+              </HashRouter>
+      
 
 
 }
