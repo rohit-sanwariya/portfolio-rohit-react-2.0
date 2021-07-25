@@ -4,10 +4,11 @@ import { useCallback } from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import rohitImg from '../img/Rohit.png'
 
 const Navbar = () => {
     
-
+    const imgElement =()=><img src={rohitImg} alt="" />
     const getDim = useCallback(() =>{
         return window.innerWidth;
     },[])

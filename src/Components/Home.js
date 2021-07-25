@@ -24,8 +24,8 @@ const Home = () => {
                 </p>
             </div>
             <div class="send-email-container">
-                <a class="send-email" href="emailto:rohitsanwariya1995@gmail.com">
-                    Send Me An Email
+                <a class="send-email" href="/projects">
+                   Check My Work
                 </a>
             </div>
            </div>
