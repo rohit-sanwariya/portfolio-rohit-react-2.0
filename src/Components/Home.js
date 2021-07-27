@@ -16,15 +16,16 @@ const Home = () => {
         <Suspense fallback={renderLoader()}>
             <div>
 
-                <main className="hero">
+                <main className="hero" >
                     <HeroText />
                     <HeroImg />
-
-                </main>
-                <div style={{margin:"1rem"}}>
+                    <div className="hero-copyright">
                     <p className="copyright">&copy; Rohit Sanwariya</p>
                 </div>
-            </div>
+          
+                </main>
+                </div>
+                
 
         </Suspense>
     )
