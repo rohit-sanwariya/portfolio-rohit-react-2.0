@@ -5,7 +5,7 @@ import reactRouterImg from '../img/react-router.png'
 import reduxImg from '../img/redux.png'
 
 const Skills = () => {
-    return (
+    return (<>
         <main className="skills-container" style={{
 
         }}>
@@ -34,11 +34,16 @@ const Skills = () => {
                 <img src={reduxImg} alt="" />
             </div>
 
-<p style={{marginLeft:"auto",textAlign:"center",paddingBottom:"1rem"}} >&copy; Rohit Sanwariya</p>
 
 
+            
 
         </main>
+        <div style={{width:"100%",display:"grid",justifyContent:"center",alignContent:'center',padding:"0 1rem"}}>
+        <p  >&copy; Rohit Sanwariya</p>
+        </div>
+        
+        </>
     )
 }
 
