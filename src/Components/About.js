@@ -1,6 +1,7 @@
 import React from 'react'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 const About = () => {
     return (
@@ -16,7 +17,14 @@ const About = () => {
                     For fun I play Table Tennis and binge watch Scifi shows and movies.
                 </p>
             </div>
-            <p>You may also find me on....</p>
+            <div className="fontawesome-email-container">
+            <a href="mailto:rohitsanwariya1995@gmail.com">
+                    Click Here to Email. 
+                    <FontAwesomeIcon className="fontawesome-email"
+                        icon={faEnvelope}  />
+                </a>
+            </div>
+            <p style={{marginTop:"1rem"}}>You may also find me on....</p>
             <div className="social-container">
 
                 <div><a href="https://www.instagram.com/rohitsanvariya?r=nametag">
@@ -40,7 +48,11 @@ const About = () => {
 
 
             </div>
-          
+            <footer>
+            <div style={{margin:"1rem"}}>
+                    <p className="copyright">&copy; Rohit Sanwariya</p>
+                </div>
+            </footer>
         </div>
 
     )

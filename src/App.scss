@@ -19,6 +19,28 @@ body {
     color: white;
     overflow-x: hidden;
     .about {
+        .fontawesome-email-container {
+            display: grid;
+            justify-content: center;
+            a{
+            text-decoration: none;
+            margin-bottom: 1rem;
+            color: white;
+                font-size: 20px;
+                text-decoration: none;
+                background-color: $blue;
+                border-radius: 25px;
+                padding: 14px 16px;
+                text-align: center;
+                margin-left: auto;
+                .fontawesome-email{
+                    color: rgba(205, 190, 238, 0.7);
+                    margin:0 1rem;
+                    
+        
+                }
+        }}
+        
         p {
             font-size: 1.2rem;
         }
