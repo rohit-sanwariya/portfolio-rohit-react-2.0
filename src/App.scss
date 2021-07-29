@@ -24,7 +24,8 @@ body {
             justify-content: center;
             a{
             text-decoration: none;
-            margin-bottom: 1rem;
+            margin: 1rem;
+            box-shadow: 4px -2px 4px #F40F0F;
             color: white;
                 font-size: 20px;
                 text-decoration: none;
@@ -193,7 +194,7 @@ main {
 
             grid-row: 4/7;
 
-            justify-self: start;
+            justify-self: center;
             a {
                 color: white;
                 font-size: 20px;
@@ -201,6 +202,7 @@ main {
                 background-color: $blue;
                 border-radius: 25px;
                 padding: 14px 16px;
+                box-shadow: 2px -1px 4px #F40F0F;
             }
         }
         .subtext-container {
@@ -219,6 +221,7 @@ main {
         }
     }
 }
+
 .carousel {
     height: 70%;
     margin-bottom: 2rem;
@@ -302,8 +305,10 @@ main {
                 justify-content: center;
                 text-align: center;
                 .send-email {
-                    margin: 1rem;
+                    margin: 1.2rem;
                     padding: 1.2rem 1rem;
+                    box-shadow: 4px -2px 4px #F40F0F;
+
                 }
             }
             width: 90%;
@@ -420,6 +425,7 @@ main {
 
             .send-email-container {
                 margin: 1rem;
+
             }
             .hero-copyright{
                 justify-content: center;
